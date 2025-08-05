@@ -1,4 +1,6 @@
 #include <iostream>
+#include <algorithm>
+
 using namespace std;
 
 void printArr(int arr[], int size)
@@ -19,6 +21,11 @@ void revArr(int arr[], int st, int end)
     }
 }
 
+void revViaLib(int arr[], int size)
+{
+    reverse(arr, arr + size);
+}
+
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5};
@@ -28,7 +35,8 @@ int main()
 
     printArr(arr, size);
 
-    revArr(arr, 0, size - 1);
+    // revArr(arr, 0, size - 1);
+    revViaLib(arr, size);
 
     printArr(arr, size);
 
