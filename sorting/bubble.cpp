@@ -5,14 +5,19 @@ void bubble(int arr[], int n)
 {
     for (int i = n - 1; i >= 1; i--)
     {
+        bool didSwap = false;
         for (int j = 0; j < i; j++)
         {
             if (arr[j] > arr[j + 1])
             {
                 swap(arr[j], arr[j + 1]);
+                didSwap = true;
             }
         }
-    }
+
+        if (!didSwap)
+            break;
+        }
 }
 
 void printArr(int arr[], int n)
