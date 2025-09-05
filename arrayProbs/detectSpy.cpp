@@ -4,7 +4,6 @@ using namespace std;
 int detectSpy(vector<int> nums)
 {
     int n = nums.size();
-
     int dominating;
 
     if (nums[0] == nums[1] || nums[1] == nums[2])
