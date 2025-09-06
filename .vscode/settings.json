@@ -2,5 +2,6 @@
   "files.associations": {
     "*.css": "tailwindcss",
     "ostream": "cpp"
-  }
+  },
+  "C_Cpp.default.compilerPath": "C:/MinGW/bin/g++.exe"
 }
